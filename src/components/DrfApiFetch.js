@@ -87,7 +87,7 @@ const DrfApiFetch = () => {
       });
   };
 
-  const handleInputChange = () => (e) => {
+  const handleInputChange = (e) => {
     const value = e.target.value;
     const name = e.target.name;
     setEditedTask({ ...editedTask, [name]: value }); // オブジェクトのkeyを変数として扱う場合の記法で、[]の中にkeyの変数を入れることで展開できる
@@ -125,7 +125,7 @@ const DrfApiFetch = () => {
         type="text"
         name="title"
         value={editedTask.title}
-        onChange={handleInputChange()}
+        onChange={(e) => handleInputChange(e)}
         placeholder="New Task ?"
         required
       />
