@@ -1,4 +1,4 @@
-# サーバーサイド：Django REST Framework\
+# サーバーサイド：Django REST Framework
 https://github.com/insilicomab/drfapi
 
 # Getting Started with Create React App
